@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>{{item.title}}</title>
+{% endblock %}
+
+{% block content %}
+
+  <div id="wrapper" class="site">
+    <h1>{{item.title}}</h1>
+  </div>
+  <section class="site">
+       <div class="card" id="{{item.id}}">
+        <div class="card__site-container">
+      
+        <iframe src="{{item.id}}" frameborder="0" ></iframe>
+        </div>  
+      </div> 
+  </section>
+
+{% endblock %}
+
